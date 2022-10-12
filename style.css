@@ -1,3 +1,25 @@
+/* 
+TEXT COLOR:  = #444 (normal)
+
+COLOR: 
+#FF9F1C 
+#FFBF69 
+#FFFFFF 
+#CBF3F0 
+#2EC4B6
+
+TINTS
+#FF9F1C : 
+
+
+SHADES
+#FF9F1C : #995f11 (40%),#4c3008 (70%)
+
+FONT SIZE: 
+1.6rem
+3.2rem (big)
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +28,78 @@
 
 html {
   font-family: "Rubik", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #cbf3f0;
 }
 
 .about-image {
   width: 50px;
+}
+
+/* GENERAL */
+.container {
+  width: 75rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.section-header {
+  background-color: #2ec4b6;
+  padding: 4.8rem 9.6rem;
+}
+
+.nav-list {
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-evenly;
+
+  font-size: 1.6rem;
+  list-style: none;
+}
+
+.nav-links:link,
+.nav-links:visited {
+  text-decoration: none;
+  color: #444;
+}
+
+.nav-links:hover,
+.nav-links:active {
+  color: #ff9f1c;
+}
+
+/* HERO SECTION */
+
+.section-about {
+  padding: 4.6rem 0;
+  text-align: center;
+}
+
+.section-about h1 {
+  font-size: 6.4rem;
+  color: #333;
+  letter-spacing: -0.2;
+}
+
+.section-about h1 span {
+  transition: all 0.2s;
+}
+.section-about h1 span:hover {
+  color: #995f11;
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2.4rem 0;
+}
+
+.subtitle-icon {
+  width: 2.4rem;
+  height: 2.4rem;
 }
