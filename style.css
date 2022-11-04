@@ -29,6 +29,7 @@ FONT SIZE:
 html {
   font-family: "Rubik", sans-serif;
   font-size: 62.5%;
+  cursor: default;
 }
 
 body {
@@ -36,7 +37,14 @@ body {
 }
 
 .about-image {
-  width: 50px;
+  width: 75%;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px -0.1px rgba(0, 0, 0, 0.404);
+}
+.about-image:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0 8px 16px -0.1px rgba(0, 0, 0, 0.404);
 }
 
 /* GENERAL */
@@ -45,7 +53,32 @@ body {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
+.fade {
+  color: rgba(68, 68, 68, 0.1) !important;
+}
+
+.highlighted {
+  color: #995f11;
+}
+
+.secondary-heading {
+  font-size: 3.2rem;
+}
+.tertiary-heading {
+  font-size: 2rem;
+}
+
+.centered {
+  text-align: center;
+}
 /* HEADER */
+.full-name {
+  box-shadow: 0 4px 1px -1px #995f11;
+}
 
 .section-header {
   background-color: #2ec4b6;
@@ -75,8 +108,7 @@ body {
 /* HERO SECTION */
 
 .section-about {
-  padding: 4.6rem 0;
-  text-align: center;
+  padding: 7.2rem 0;
 }
 
 .section-about h1 {
@@ -96,10 +128,204 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 2.4rem 0;
+  padding: 4.8rem 0;
+}
+
+.icon__2 {
+  display: none;
+  opacity: 0;
+}
+
+.subtitle:hover .icon__1 {
+  opacity: 0;
+  display: none;
+}
+
+.subtitle:hover .icon__2 {
+  display: inline-block;
+  opacity: 1;
+}
+
+.subtitle__2:hover {
+  text-align: start !important;
+}
+.subtitle__2:hover .icon__3 {
+  transition: transform 1.5s;
+  transform: translateX(350%);
 }
 
 .subtitle-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.icon-description {
+  font-size: 1.4rem;
+}
+
+.project-container {
+  padding-top: 7.2rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.link-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-links:link,
+.project-links:visited {
+  text-decoration: none;
+  color: #995f11;
+  padding: 0.8rem 1.6rem;
+  transition: color 0.3s;
+  border: solid 2px transparent;
+}
+
+.project-links:hover,
+.project-links:active {
+  border: solid 2px #995f11;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+/* WORK HISTORY */
+.section-work {
+  padding-bottom: 4.8rem;
+}
+
+.job {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.job-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title p {
+  font-size: 1.6rem;
+  padding-bottom: 2.4rem;
+}
+
+.info__job {
+  position: absolute;
+  background-color: rgba(153, 94, 17, 0.5);
+  color: #333;
+  padding: 2.4rem 4.8rem;
+  top: 0;
+  right: 0;
+  /* transform: translateY(-100px); */
+  transform: translate(50%, -50%);
+  transition: all 0.3s;
+  text-align: start;
+  width: 75%;
+  max-width: 43rem;
+}
+
+.section-contact,
+.section-education,
+.work-heading,
+.project-container {
+  transition: all 0.2s;
+}
+
+.job-info-list {
+  list-style-image: url("icons/star-svgrepo-com.svg");
+  line-height: 1.7rem;
+  font-size: 1.6rem;
+  /* width: 20rem; */
+}
+
+/* EDUCATION */
+.section-education {
+  padding-bottom: 4.8rem;
+}
+
+.education {
+  padding-bottom: 2.4rem;
+}
+/* .education:last-child {
+  padding-bottom: 0;
+} */
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificate-links:link,
+.certificate-links:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #995f11;
+  padding: 0.8rem 1.6rem;
+  transition: color 0.3s;
+  border: solid 2px transparent;
+}
+
+.certificate-links:hover,
+.certificate-links:active {
+  border: solid 2px #995f11;
+  border-radius: 2rem;
+  font-weight: 500;
+}
+
+.sub-section-certificates {
+  padding-bottom: 4.8rem;
+}
+
+.education {
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  min-width: 43rem;
+}
+
+.info ul {
+  list-style-image: url(/icons/star-svgrepo-com.svg);
+  font-size: 1.6rem;
+  background-color: rgba(153, 94, 17, 0.5);
+  color: #333;
+  padding: 2.4rem 4.8rem;
+}
+
+.info {
+  text-align: start;
+
+  top: 0;
+  right: 0;
+  /* transform: translateY(-100px); */
+  transform: translate(50%, -40%);
+}
+
+.education:last-child .info {
+  transform: translate(50%, -40%);
+}
+/* CONTACT */
+.section-contact {
+  padding: 7.2rem 0;
+  background-color: #2ec4b6;
+}
+
+.sub-section-education p {
+  font-size: 1.6rem;
+}
+
+.section-contact p,
+.section-contact a {
+  font-size: 1.6rem;
+}
+
+.email-address:link,
+.email-address:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.email-address:hover,
+.email-address:active {
+  color: #995f11;
 }
