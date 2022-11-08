@@ -14,8 +14,10 @@ const certificate = document.querySelector(".certificate");
 
 const educationArr = document.querySelectorAll(".education");
 const educationInfoArr = document.querySelectorAll(".info");
-console.log(educationInfoArr);
 const sectionEdu = document.querySelector(".section-edu");
+
+const sectionContact = document.querySelector(".section-contact");
+sectionContact.style.backgroundColor = "#2EC4B6";
 
 const subtitleCoder = document.querySelector(".subtitle__1");
 const subtitleMotorcycle = document.querySelector(".subtitle__2");
@@ -26,8 +28,6 @@ const motorcycleIcon = document.querySelector(".icon__3");
 const controllerIcon = document.querySelector(".icon__4");
 
 const linksArr = [...projectLinksArr, ...certificateLinksArr];
-
-console.log(wrenchIcon, computerIcon);
 
 const fadeOut = (arr) => {
   arr.forEach((el) => el.classList.toggle("fade"));
@@ -107,6 +107,7 @@ educationArr.forEach((el, i) => {
     ]);
 
     educationArr[i].classList.toggle("highlighted");
+    sectionContact.style.background = "#CBF3F0 ";
 
     // eduNew.forEach((el) => el.classList.toggle("fade"));
   });
@@ -135,6 +136,7 @@ educationArr.forEach((el, i) => {
       ...eduNew,
     ]);
     educationArr[i].classList.toggle("highlighted");
+    sectionContact.style.background = "#2EC4B6 ";
     // eduNew.forEach((el) => el.classList.toggle("fade"));
   });
 });

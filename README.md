@@ -21,3 +21,7 @@ I want to do something cool with the "sub-titles" under my name, let me ponder f
 So it's been more than a day, I know. But I think I am on to something I believe to be cool. I want to have adapting icons for the subtitles (adapting meaning they change on hover)
 
 6. I've decided to but the icon thing on pause for now. Started with styling the page, changing the font sizes, line spacing etc.
+
+7. Finally did some basic animations for the first 2 icons. Still trying to figure out the third.
+
+While I was pondering, I styled the hovering boxes to look better, added the social links and reduced the image size to a more user-friendly size (thank you Lighthouse) for the reminder.

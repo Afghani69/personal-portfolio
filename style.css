@@ -8,6 +8,7 @@ COLOR:
 #CBF3F0 
 #2EC4B6
 
+
 TINTS
 #FF9F1C : 
 
@@ -222,6 +223,16 @@ body {
   text-align: start;
   width: 75%;
   max-width: 43rem;
+
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.info__job li {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.info__job li:last-child {
+  margin-bottom: 0;
 }
 
 .section-contact,
@@ -283,22 +294,30 @@ body {
   position: absolute;
   min-width: 43rem;
 }
-
+.info li {
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.info li:last-child {
+  margin-bottom: 0;
+}
 .info ul {
   list-style-image: url(/icons/star-svgrepo-com.svg);
   font-size: 1.6rem;
-  background-color: rgba(153, 94, 17, 0.5);
   color: #333;
   padding: 2.4rem 4.8rem;
 }
 
 .info {
   text-align: start;
+  background-color: rgba(153, 94, 17, 0.5);
 
   top: 0;
   right: 0;
   /* transform: translateY(-100px); */
   transform: translate(50%, -40%);
+  border-radius: 2rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .education:last-child .info {
@@ -328,4 +347,19 @@ body {
 .email-address:hover,
 .email-address:active {
   color: #995f11;
+}
+.contact,
+.social {
+  margin-top: 2.4rem;
+}
+.link-box {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+.social-links:link,
+.social-links:visited {
+  text-decoration: none;
+  color: inherit;
 }
