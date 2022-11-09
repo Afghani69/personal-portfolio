@@ -38,6 +38,8 @@ body {
 }
 
 .about-image {
+  /* background-image: url("imgs/20221017_145145.webp");
+  background-size: cover; */
   width: 75%;
   border-radius: 2rem;
   transition: all 0.3s;
@@ -362,4 +364,9 @@ body {
 .social-links:visited {
   text-decoration: none;
   color: inherit;
+}
+
+.social-links:hover,
+.social-links:active {
+  color: #995f11;
 }

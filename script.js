@@ -17,7 +17,6 @@ const educationInfoArr = document.querySelectorAll(".info");
 const sectionEdu = document.querySelector(".section-edu");
 
 const sectionContact = document.querySelector(".section-contact");
-sectionContact.style.backgroundColor = "#2EC4B6";
 
 const subtitleCoder = document.querySelector(".subtitle__1");
 const subtitleMotorcycle = document.querySelector(".subtitle__2");
